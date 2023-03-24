@@ -2,10 +2,11 @@
 #include <stdio.h>
 int main()
 {
-	char x = 'A';
+	char x = 'D';
 	char* px = &x;
 	char** ppx = &px;
 	printf("%p %p\n", px, px + 1); // x의 바이트 수가 1이므로 1 증가
+	printf("%p %p\n", px, px + 2);
 	printf("%p %p\n", ppx, ppx + 1); // px의 바이트 수가 4. 따라서 그의 포인터인 ppx는 +1 시 4 증가
 	printf("%p %p\n", &x, &x + 1); // x의 주소에 1 증가 
 	printf("%p %p\n", &px, &px + 1); // 상단의 설명 참고.
